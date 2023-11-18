@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "target": "ES2020",
+        "sourceMap": true,
+        "outDir": "dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "paths": {
+            "@/*": ["./src/*"],
+            "@configs/*": ["./src/configs/*"],
+            "@controllers/*": ["./src/controllers/*"],
+            "@exceptions/*": ["./src/exceptions/*"],
+            "@middlewares/*": ["./src/middlewares/*"],
+            "@models/*": ["./src/models/*"],
+            "@routes/*": ["./src/routes/*"],
+            "@services/*": ["./src/services/*"],
+            "@utils/*": ["./src/utils/*"]
+        }
+    },
+    "include": ["./*.js", "src/**/*.ts", "test/**/*.ts"]
+}
