@@ -23,7 +23,6 @@ export function webhookAuth(
     const hmac = crypto.createHmac("sha256", WEBHOOK_SECRET);
     const digest = hmac.update(req.body).digest("hex");
     let isSignatureValid = false;
-    console.log(digest);
 
     try {
         isSignatureValid = crypto.timingSafeEqual(
