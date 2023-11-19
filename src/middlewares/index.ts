@@ -1,8 +1,3 @@
-import express from "express";
-import { example } from "@/middlewares/global/example";
+import { jsonParser } from "@middlewares/global/jsonParser";
 
-export const middlewares = [
-    express.json(),
-    // express.urlencoded(),
-    example,
-] as const;
+export const middlewares = [jsonParser] as const;

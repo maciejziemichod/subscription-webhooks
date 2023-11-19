@@ -1,3 +1,3 @@
-import { ExampleRoute } from "@routes/example";
+import { SubscriptionRoute } from "@routes/subscription";
 
-export const routes = [ExampleRoute] as const;
+export const routes = [SubscriptionRoute] as const;
