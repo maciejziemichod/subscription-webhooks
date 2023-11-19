@@ -14,7 +14,7 @@ const subscription = z.object({
     status: z.enum(["active", "cancelled", "inactive"]),
 });
 const createSubscription = subscription.omit({ id: true });
-const updateSubscription = subscription.partial();
+const updateSubscription = createSubscription.partial();
 
 export const SubscriptionSchemas = {
     id,
